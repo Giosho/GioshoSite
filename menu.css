@@ -1,6 +1,7 @@
+/* Base Styles */
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh; /* Ensures full height on all devices */
     background-color: #f0f0f0; /* Light gray background */
     display: flex;
     justify-content: center; /* Center content horizontally */
@@ -15,10 +16,10 @@ html {
 .menu {
     text-align: center; /* Center text */
     background: white; /* White background for content */
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    width: 80%; /* Adjust width */
+    width: 90%; /* Adjust width for smaller screens */
     max-width: 800px; /* Max width */
     margin-top: 20px; /* Space from top */
 }
@@ -26,17 +27,18 @@ html {
 .banner {
     display: flex; /* Horizontal layout */
     justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
     margin-bottom: 20px; /* Space below the banner */
 }
 
 .banner a {
-    margin: 0 10px; /* Space between links */
+    margin: 8px 5px; /* Reduced space between links */
     text-decoration: none; /* Remove underline */
     color: white; /* Button text color */
     background-color: #007BFF; /* Button color */
-    padding: 12px 20px; /* Increased padding for a better look */
+    padding: 10px 15px; /* Reduced padding for smaller screens */
     border-radius: 25px; /* More rounded corners */
-    font-size: 1.2em; /* Font size */
+    font-size: 1em; /* Font size */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Transition effects */
 }
@@ -49,23 +51,26 @@ html {
 
 .section {
     margin: 20px 0; /* Space between sections */
-    padding: 20px; /* Padding inside sections */
+    padding: 15px; /* Adjusted padding */
     background: #e8e8e8; /* Light background for sections */
     border-radius: 10px; /* Rounded corners for sections */
 }
 
 h1 {
-    margin-bottom: 20px; /* Space below the heading */
+    margin-bottom: 15px; /* Adjusted space below the heading */
+    font-size: 1.5em; /* Adjusted font size */
     color: #333; /* Darker text color */
 }
 
 h2 {
     margin-top: 0; /* Remove top margin for section headings */
+    font-size: 1.2em; /* Adjusted font size */
     color: #333; /* Darker text color */
 }
 
 p {
     color: #666; /* Lighter text color */
+    font-size: 0.9em; /* Reduced font size */
 }
 
 /* Hobby list styles */
@@ -75,7 +80,7 @@ p {
 }
 
 .hobby-list li {
-    margin: 15px 0; /* Space between items */
+    margin: 10px 0; /* Adjusted space between items */
 }
 
 .hobby-item {
@@ -83,7 +88,7 @@ p {
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
     transition: background-color 0.2s; /* Transition effect */
-    padding: 10px; /* Padding */
+    padding: 8px; /* Adjusted padding */
     border-radius: 8px; /* Rounded corners */
 }
 
@@ -92,8 +97,36 @@ p {
 }
 
 .hobby-image {
-    margin-left: 10px; /* Space between text and image */
-    width: 30px; /* Adjusted width for smaller icons */
-    height: 30px; /* Adjusted height for smaller icons */
+    margin-left: 8px; /* Reduced space between text and image */
+    width: 25px; /* Adjusted width for smaller icons */
+    height: 25px; /* Adjusted height for smaller icons */
     object-fit: contain; /* Maintain aspect ratio without cropping */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .menu {
+        padding: 15px; /* Reduced padding on smaller screens */
+    }
+
+    .banner a {
+        font-size: 0.9em; /* Smaller font size on mobile */
+        padding: 8px 12px; /* Smaller padding on mobile */
+    }
+
+    h1 {
+        font-size: 1.4em; /* Smaller heading size on mobile */
+    }
+
+    h2 {
+        font-size: 1.1em; /* Smaller heading size on mobile */
+    }
+
+    p {
+        font-size: 0.85em; /* Smaller paragraph font size */
+    }
+
+    .hobby-item {
+        padding: 6px; /* Smaller padding */
+    }
 }
