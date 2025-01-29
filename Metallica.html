@@ -110,6 +110,58 @@
         .back-button:hover {
             background-color: #6d0000;
         }
+
+        /* Mobile compatibility with Media Queries */
+        @media (max-width: 768px) {
+            .album {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .album img {
+                width: 120px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .banner {
+                flex-direction: column;
+            }
+
+            .banner a {
+                margin: 10px 0;
+                font-size: 1.1em;
+            }
+
+            .menu {
+                padding: 15px;
+            }
+
+            .song-list {
+                text-align: center;
+            }
+
+            .song-item {
+                margin: 8px 0;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 200px;
+            }
+
+            .album img {
+                width: 100px;
+            }
+
+            .back-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
     </style>
 </head>
 <body>

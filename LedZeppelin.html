@@ -11,7 +11,6 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            /* Vertical stripes with alternating colors (#120e0f and #c72517) */
             background: repeating-linear-gradient(
                 90deg, /* 90deg creates vertical lines */
                 #120e0f, /* Color for the first stripe (black) */
@@ -28,12 +27,13 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            width: 350px; /* Adjust size of the Mothership image */
+            width: 25vw; /* 25% of the viewport width */
+            max-width: 350px; /* Max width for larger screens */
             z-index: 10;
         }
 
         .menu {
-            max-width: 800px;
+            max-width: 75%;
             margin: auto;
             padding: 20px;
             text-align: center;
@@ -42,6 +42,7 @@
         .logo {
             width: 250px; /* Adjust size of the logo */
             margin-bottom: 20px; /* Space between the logo and content */
+            max-width: 100%;
         }
 
         p {
@@ -64,6 +65,7 @@
             height: auto;
             margin-right: 20px;
             border-radius: 10px;
+            max-width: 100%;
         }
 
         .song-list {
@@ -88,6 +90,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
+            flex-wrap: wrap; /* Allow for responsive links */
         }
 
         .banner a {
@@ -122,6 +125,55 @@
 
         .back-button:hover {
             background-color: #ac2013;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .mothership-image {
+                width: 40vw; /* Adjust mothership image width on smaller screens */
+                max-width: 250px; /* Max width for mobile */
+            }
+
+            .logo {
+                width: 200px; /* Adjust logo size on smaller screens */
+            }
+
+            .album {
+                flex-direction: column; /* Stack album image and info vertically on small screens */
+                text-align: center;
+            }
+
+            .album img {
+                margin-right: 0;
+                margin-bottom: 15px;
+                width: 200px;
+            }
+
+            .song-item {
+                font-size: 0.9em; /* Adjust font size for mobile */
+            }
+
+            .banner a {
+                font-size: 1em; /* Adjust font size of links on small screens */
+                margin: 5px 0;
+                padding: 10px 15px; /* Adjust padding of links */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 180px; /* Further decrease logo size for very small screens */
+            }
+
+            .banner a {
+                font-size: 0.9em; /* Adjust font size even further */
+                padding: 8px 12px;
+            }
+
+            .back-button {
+                padding: 8px 16px;
+                font-size: 1em;
+            }
         }
     </style>
 </head>

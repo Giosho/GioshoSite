@@ -7,11 +7,12 @@
     <link rel="icon" type="image/png" href="IconMEGA.png">
     <link rel="stylesheet" href="menu.css">
     <style>
+        /* General Styles */
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: #121212; /* Dark grey background */
-            color: #e6e6e6; /* Light gray text for readability */
+            background: #121212;
+            color: #e6e6e6;
         }
 
         .menu {
@@ -40,7 +41,7 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 30px;
-            background-color: #303030; /* Dark grey for album info */
+            background-color: #303030;
             padding: 25px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
@@ -51,7 +52,7 @@
             height: auto;
             margin-right: 25px;
             border-radius: 10px;
-            border: 3px solid #bbb; /* Light metallic gray border */
+            border: 3px solid #bbb;
         }
 
         .song-list {
@@ -63,13 +64,13 @@
         .song-item {
             margin: 10px 0;
             padding: 10px;
-            background-color: #595959; /* Darker gray for song items */
+            background-color: #595959;
             border-radius: 8px;
             transition: background-color 0.3s;
         }
 
         .song-item:hover {
-            background-color: #6f6f6f; /* Lighter gray on hover */
+            background-color: #6f6f6f;
             cursor: pointer;
         }
 
@@ -83,7 +84,7 @@
             margin: 0 15px;
             text-decoration: none;
             color: #fff;
-            background-color: #a1a1a1; /* Metallic red for banner links */
+            background-color: #a1a1a1;
             padding: 12px 25px;
             border-radius: 25px;
             font-size: 1.1em;
@@ -93,7 +94,7 @@
         }
 
         .banner a:hover {
-            background-color: #d4d4d4; /* Lighter red on hover */
+            background-color: #d4d4d4;
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
@@ -113,6 +114,57 @@
         .back-button:hover {
             background-color: #aeaeae;
         }
+
+        /* Mobile compatibility with Media Queries */
+        @media (max-width: 768px) {
+            .album {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .album img {
+                width: 120px;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .banner {
+                flex-direction: column;
+            }
+
+            .banner a {
+                margin: 10px 0;
+            }
+
+            .menu {
+                padding: 15px;
+            }
+
+            .song-list {
+                text-align: center;
+            }
+
+            .song-item {
+                margin: 8px 0;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1, h2 {
+                font-size: 1.5em;
+            }
+
+            .album img {
+                width: 100px;
+            }
+
+            .back-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -124,7 +176,7 @@
             <a href="#album">Album</a>
         </div>
 
-        <!-- Album: Peace Sells... But Who's Buying? -->
+        <!-- Album: Killing Is My Business... and Business Is Good! -->
         <div id="album" class="section">
             <h2>Album: *Killing Is My Business... and Business Is Good!*</h2>
             <div class="album">
@@ -213,7 +265,7 @@
 
         <!-- Other Albums -->
 
-                <!-- Album: Rust in Peace -->
+                <!-- Album: Peace Sells... but Who's Buying? -->
                 <div id="album" class="section">
                     <h2>Album: *Peace Sells... but Who's Buying?*</h2>
                     <div class="album">
@@ -235,6 +287,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <!-- Album: Hidden Treasures -->
                 <div id="album" class="section">
                     <h2>Album: *Hidden Treasures*</h2>
@@ -256,7 +309,7 @@
                             <strong>Angry Again</strong> – *Hidden Treasures*
                         </li>
                         <li class="song-item">
-                            <strong>No More Mr.Nice Guy</strong> – *Hidden Treasures*
+                            <strong>No More Mr. Nice Guy</strong> – *Hidden Treasures*
                         </li>
                         <li class="song-item">
                             <strong>Breakpoint</strong> – *Hidden Treasures*
