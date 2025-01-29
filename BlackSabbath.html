@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Sabbath - Discography</title>
+    <link rel="icon" type="image/png" href="IconB.png">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #1a0e1d; /* Dark purple background */
+            color: #e6e6e6; /* Light gray text for readability */
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #fff; /* White text for headers */
+        }
+
+        p {
+            color: #ccc;
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #351949; /* Deep purple background for album info */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #52157a; /* Lighter purple for song items */
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .song-item:hover {
+            background-color: #621777; /* Brighter purple on hover */
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #511f5a; /* Purple for banner links */
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #622d6b; /* Lighter purple on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #4e2255;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #753b80;
+        }
+
+        .logo {
+            width: 350px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- Replace the <h1> tag with the logo image -->
+        <img src="LogoB.png" alt="Black Sabbath Logo" class="logo">
+
+        <div class="banner">
+            <a href="#songs">Songs</a>
+            <a href="#album">Album</a>
+        </div>
+
+        <!-- Album: Paranoid -->
+        <div id="album" class="section">
+            <h2>Album: *Paranoid*</h2>
+            <div class="album">
+                <img src="AlbumB1.png" alt="Paranoid Album Cover">
+                <div>
+                    <p><b>Released:</b> 1970</p>
+                    <p><b>Genre:</b> Heavy Metal</p>
+                    <p><b>Label:</b> Vertigo</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Paranoid*</h2>
+            <p>Here are the songs from the album *Paranoid*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Iron Man</strong> – *Paranoid*
+                </li>
+                <li class="song-item">
+                    <strong>Paranoid</strong> – *Paranoid*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Back Button -->
+        <a href="menu.html">
+            <button class="back-button">Back to Menu</button>
+        </a>
+    </div>
+</body>
+</html>

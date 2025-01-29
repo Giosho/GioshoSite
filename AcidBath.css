@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #6d0000; /* Light gray background */
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: flex-start; /* Align content to the top */
@@ -14,7 +14,7 @@ html {
 
 .menu {
     text-align: center; /* Center text */
-    background: white; /* White background for content */
+    background: #6d0000; /* White background for content */
     padding: 30px;
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -32,7 +32,7 @@ html {
 .banner a {
     margin: 0 10px; /* Space between links */
     text-decoration: none; /* Remove underline */
-    color: white; /* Button text color */
+    color: #6d0000; /* Button text color */
     background-color: #007BFF; /* Button color */
     padding: 12px 20px; /* Increased padding for a better look */
     border-radius: 25px; /* More rounded corners */
@@ -50,7 +50,7 @@ html {
 .section {
     margin: 20px 0; /* Space between sections */
     padding: 20px; /* Padding inside sections */
-    background: #e8e8e8; /* Light background for sections */
+    background: #6d0000; /* Light background for sections */
     border-radius: 10px; /* Rounded corners for sections */
 }
 
@@ -106,14 +106,14 @@ p {
 }
 
 .hobby-item:hover {
-    background-color: #d1e7fd; /* Light blue background on hover */
+    background-color: #6d0000; /* Light blue background on hover */
 }
 
 .music-item:hover {
-    background-color: #d1e7fd; /* Light blue background on hover */
+    background-color: #6d0000; /* Light blue background on hover */
 }
 
 .favorites-item:hover {
-    background-color: #d1e7fd; /* Light blue background on hover */
+    background-color: #6d0000; /* Light blue background on hover */
 }
 

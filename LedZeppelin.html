@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Led Zeppelin - Discography</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="IconL.png">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            /* Vertical stripes with alternating colors (#120e0f and #c72517) */
+            background: repeating-linear-gradient(
+                90deg, /* 90deg creates vertical lines */
+                #120e0f, /* Color for the first stripe (black) */
+                #120e0f 80px, /* Width of the black stripe */
+                #c72517 80px, /* Color for the second stripe (red) */
+                #c72517 160px /* Width of the red stripe */
+            );
+            color: #f5f5f5; /* Light gray for the text to stand out */
+            position: relative; /* Required for positioning the image */
+        }
+
+        /* Mothership image on the top right */
+        .mothership-image {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 350px; /* Adjust size of the Mothership image */
+            z-index: 10;
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 250px; /* Adjust size of the logo */
+            margin-bottom: 20px; /* Space between the logo and content */
+        }
+
+        p {
+            color: #ddd; /* Light gray text for better readability */
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #2b2b2b; /* Dark background for album info */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #db2a1a; /* Red background for song items */
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .song-item:hover {
+            background-color: #ac2013; /* Darker red when hovered */
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ac2013; /* Gold for banner links */
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #db2a1a; /* Lighter gold when hovered */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #db2a1a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ac2013;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mothership image -->
+    <img src="mothership_.png" alt="Mothership" class="mothership-image">
+
+    <div class="menu">
+        <!-- Replace the <h1> tag with the logo image -->
+        <img src="LogoL.png" alt="Led Zeppelin Logo" class="logo">
+        
+        <div class="banner">
+            <a href="#songs">Songs</a>
+            <a href="#album">Album</a>
+        </div>
+
+        <!-- Album: Led Zeppelin IV -->
+        <div id="album" class="section">
+            <h2>Album: *Led Zeppelin IV*</h2>
+            <div class="album">
+                <img src="AlbumL3.png" alt="Led Zeppelin IV Album Cover">
+                <div>
+                    <p><b>Released:</b> 1971</p>
+                    <p><b>Genre:</b> Hard Rock</p>
+                    <p><b>Label:</b> Atlantic Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Led Zeppelin IV*</h2>
+            <p>Here are the selected songs from Led Zeppelin IV:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Black Dog</strong> – *Led Zeppelin IV*
+                </li>
+                <li class="song-item">
+                    <strong>Stairway to Heaven</strong> – *Led Zeppelin IV*
+                </li>
+            </ul>
+        </div>
+
+        <div id="album" class="section">
+            <h2>Album: *Led Zeppelin II*</h2>
+            <div class="album">
+                <img src="AlbumL2.png" alt="Led Zeppelin IV Album Cover">
+                <div>
+                    <p><b>Released:</b> 1971</p>
+                    <p><b>Genre:</b> Hard Rock</p>
+                    <p><b>Label:</b> Atlantic Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Led Zeppelin II*</h2>
+            <p>Here are the selected songs from Led Zeppelin II:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Whole Lotta Love</strong> – *Led Zeppelin II*
+                </li>
+            </ul>
+
+            <div id="album" class="section">
+                <h2>Album: *Mothership*</h2>
+                <div class="album">
+                    <img src="AlbumL1.png" alt="Led Zeppelin IV Album Cover">
+                    <div>
+                        <p><b>Released:</b> 1971</p>
+                        <p><b>Genre:</b> Hard Rock</p>
+                        <p><b>Label:</b> Atlantic Records</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="songs" class="section">
+                <h2>Tracklist: *Mothership*</h2>
+                <p>Here are the selected songs from Mothership:</p>
+                <ul class="song-list">
+                    <li class="song-item">
+                        <strong>Immigrant Song</strong> – *Mothership*
+                    </li>
+                </ul>
+        </div>
+
+        <!-- Back Button -->
+        <a href="menu.html">
+            <button class="back-button">Back to Menu</button>
+        </a>
+    </div>
+</body>
+</html>

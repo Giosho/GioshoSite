@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC/DC - Discography</title>
+    <link rel="icon" type="image/png" href="IconAC.png">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #3c3c3c);
+            color: #e6e6e6;
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #d64040;
+        }
+
+        p {
+            color: #ccc;
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #4b4b4b;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .song-item:hover {
+            background-color: #6e6e6e;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #cc3333;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #ff3333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #b52f2f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ff3333;
+        }
+
+        .logo {
+            width: 350px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- Replace the <h1> tag with the logo image -->
+        <img src="LogoAC.png" alt="AC/DC Logo" class="logo">
+
+        <div class="banner">
+            <a href="#songs">Songs</a>
+            <a href="#album">Album</a>
+        </div>
+
+        <!-- Album: T.N.T -->
+        <div id="album" class="section">
+            <h2>Album: *T.N.T*</h2>
+            <div class="album">
+                <img src="AlbumAC1.png" alt="T.N.T Album Cover">
+                <div>
+                    <p><b>Released:</b> 1975</p>
+                    <p><b>Genre:</b> Hard Rock</p>
+                    <p><b>Label:</b> Albert Productions</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *T.N.T*</h2>
+            <p>Here are the songs from the album *T.N.T*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>It's a Long Way to the Top (If You Wanna Rock 'n' Roll)</strong> – *T.N.T*
+                </li>
+                <li class="song-item">
+                    <strong>T.N.T</strong> – *T.N.T*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Highway to Hell -->
+        <div id="album" class="section">
+            <h2>Album: *Highway to Hell*</h2>
+            <div class="album">
+                <img src="AlbumAC2.png" alt="Highway to Hell Album Cover">
+                <div>
+                    <p><b>Released:</b> 1979</p>
+                    <p><b>Genre:</b> Hard Rock</p>
+                    <p><b>Label:</b> Atlantic Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Highway to Hell*</h2>
+            <p>Here are the songs from the album *Highway to Hell*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Highway to Hell</strong> – *Highway to Hell*
+                </li>
+                <li class="song-item">
+                    <strong>Touch Too Much</strong> – *Highway to Hell*
+                </li>
+                <li class="song-item">
+                    <strong>Girls Got Rhythm</strong> – *Highway to Hell*
+                </li>
+                <li class="song-item">
+                    <strong>Shot Down in Flames</strong> – *Highway to Hell*
+                </li>
+                <li class="song-item">
+                    <strong>Beatin' Around the Bush</strong> – *Highway to Hell*
+                </li>
+                <li class="song-item">
+                    <strong>Night Prowler</strong> – *Highway to Hell*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Back in Black -->
+        <div id="album" class="section">
+            <h2>Album: *Back in Black*</h2>
+            <div class="album">
+                <img src="AlbumAC3.png" alt="Back in Black Album Cover">
+                <div>
+                    <p><b>Released:</b> 1980</p>
+                    <p><b>Genre:</b> Hard Rock</p>
+                    <p><b>Label:</b> Atlantic Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Back in Black*</h2>
+            <p>Here are the songs from the album *Back in Black*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Back in Black</strong> – *Back in Black*
+                </li>
+                <li class="song-item">
+                    <strong>You Shook Me All Night Long</strong> – *Back in Black*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Power Up -->
+        <div id="album" class="section">
+            <h2>Album: *The Razors Edge*</h2>
+            <div class="album">
+                <img src="AlbumAC4.png" alt="The Razors Edge Album Cover">
+                <div>
+                    <p><b>Released:</b> 2020</p>
+                    <p><b>Genre:</b> Hard Rock</p>
+                    <p><b>Label:</b> Columbia Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *The Razors Edge*</h2>
+            <p>Here are the songs from the album *The Razors Edge*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Thunderstruck</strong> – *The Razors Edge*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Back Button -->
+        <a href="menu.html">
+            <button class="back-button">Back to Menu</button>
+        </a>
+    </div>
+</body>
+</html>

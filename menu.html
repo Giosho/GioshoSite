@@ -11,18 +11,21 @@
             font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #e0eafc, #cfdef3);
         }
+
         .menu {
             max-width: 800px;
             margin: auto;
             padding: 20px;
             text-align: center;
         }
+
         .profile-pic {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             margin-bottom: 20px;
         }
+
         .hobby-list {
             list-style: none;
             padding: 0;
@@ -30,37 +33,159 @@
             max-height: 200px;
             overflow-y: auto;
         }
+
         .hobby-item {
             display: flex;
             align-items: center;
             margin: 10px 0;
         }
+
         .hobby-image {
             width: 30px;
             height: 30px;
             margin-right: 10px;
         }
+
         @media (max-width: 600px) {
             .menu {
                 padding: 10px;
             }
+
             .profile-pic {
                 width: 80px;
                 height: 80px;
             }
+
             h1, h2 {
                 font-size: 1.5em;
             }
+
             .hobby-item {
                 margin: 8px 0;
             }
+
             .hobby-image {
                 width: 25px;
                 height: 25px;
             }
+
             .hobby-list {
                 max-height: 150px;
             }
+        }
+
+        /* Styles for the music section */
+        .music-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .music-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px 0; /* Adjusting spacing between music items */
+        }
+
+        /* Adjusting the Metallica logo specifically */
+        .music-item img[src='Logom.png'] {
+            width: 150px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .music-item img[src='LogoA.png'] {
+            width: 150px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .music-item img[src='LogoI.png'] {
+            width: 150px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .music-item img[src='LogoG.png'] {
+            width: 80px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .music-item img[src='LogoC.png'] {
+            width: 150px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .music-item img[src='LogoAC.png'] {
+            width: 120px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .music-item img[src='LogoB.png'] {
+            width: 150px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+        .music-item img[src='LogoMEGA.png'] {
+            width: 200px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+        .music-item img[src='LogoL.png'] {
+            width: 150px; /* Adjust to a consistent size */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .music-item:hover {
+            background-color: #d1e7fd; /* Light blue background on hover */
+        }
+
+        /* Banner styles */
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #e8e8e8;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
         }
     </style>
 </head>
@@ -77,7 +202,7 @@
 
         <div id="intro" class="section">
             <h2>Introduction</h2>
-            <p>C#, Arduino, Python dev, Nature Lover, Fishing Lover, Orthodox Christian☦, Rower, Robot Engineer, Evangelist/Missionary, Anti-Communist☭⊗, 131,  National Socialistϟ</p>
+            <p>C#, Arduino, Python dev, Nature Lover, Fishing Lover, Orthodox Christian☦, Rower, Robot Engineer, Evangelist/Missionary, Anti-Communist☭⊗, 131, National Socialistϟ</p>
         </div>
 
         <div id="hobbies" class="section">
@@ -113,30 +238,69 @@
 
         <div id="music" class="section">
             <h2>What Music I Listen To</h2>
-            <li class="hobby-item">
-                <img src="LogoA.png" alt="Metal" class="hobby-image">
-            <p><b>Acid Bath</b></p>
-        </div>      
-            <p><b>Metallica</b> - Master Of Puppets, Seek & Destroy, One, Battery, Whiplash, Enter Sandman, Ride the Lighting, Creeping Death,
-                From Whom the Bell Tolls, Whatever I May Roam, Sad but True, Die Die My Darling, </p>
-            <p><b>Iron Maiden</b> - Be Quick or be Dead, 2 Minutes to Midnight, Run to the Hills, The Trooper</p>
-            <p><b>Guns 'N' Roses</b> - Welcome To The Jungle, Rocket Queen, You're Crazy, Knockin' On Heacen's Door, November Rain, Paradise City, Sweet Child O' Mine</p>
-            <p><b>Children Of Bodom</b> - Needled 24 / 7, Oops!...I Did It Again, If You Want Peace... Prepare For War, In Your Face, Downfall, I'm Shipping Up To Bodom, I Worship Chaos, Everytime I Die, Under Grass and Clover, Platitudes and Berren Words, Silent Night Bodom Night, This Road, Hate Me, Bed Of Razors, Are You Dead Yet?</p>
-            <p><b>AC/DC</b> - T.N.T, Hight Way to Hell, You Shook me All Night Long, Back in Black, Night Prowler, Love Hungry Man, If you Want Blood, Get it Hot, Beating Around the Bush,
-               Shot Down in Flames, Touch Too Much, Walk All Over You, Girls Got Rhythm, Thunder Struck</p>
-            <p><b>Black Sabbath/ Ozzy Osbourne</b> - Iron Man, Paranoid, No More Tears, Mama I'm Coming Home, Crazy Train</p>
-            <p><b>Megadeath</b> - Symphony Of Destruction, Kill The King, Holy Wars...The Punishment Due, Dread and the Fugitive Mind, The World Needs a Hero,  Recipe for Hate... Warhorse, Sweating Bullets, This Was My Life, Mechanix, Skin O' My Teeth, Architecture of Agression, Foreclosure of a Dream, Angry Again, No More Mr.Nice Guy</p>
-            <p><b>Led Zeppelin</b> - Black Dog, Whole Lotta Love, Immigrant Song, Stairway To Heaven</p>
+            <p>Here are some of my favorite music bands:</p>
+            <ul class="music-list">
+                <li class="music-item">
+                    <a href="AcidBath.html">
+                        <img src="LogoA.png" alt="Acid Bath" class="hobby-image">
+                    </a>
+                </li>
+                <li class="music-item">
+                    <a href="Metallica.html">
+                        <img src="Logom.png" alt="Metallica" class="hobby-image">
+                    </a>
+                </li>
+                <li class="music-item">
+                    <a href="IronMaiden.html">
+                        <img src="LogoI.png" alt="Iron Maiden" class="hobby-image">
+                    </a>
+                </li>
+                <li class="music-item">
+                    <a href="Guns'N'Roses.html">
+                        <img src="LogoG.png" alt="Guns 'N' Roses" class="hobby-image">
+                    </a>
+                </li>
+                <li class="music-item">
+                    <a href="ChildrenOfBodom.html">
+                        <img src="LogoC.png" alt="Children Of Bodom" class="hobby-image">
+                    </a>
+                </li>
+                <li class="music-item">
+                    <a href="ACDC.html">
+                        <img src="LogoAC.png" alt="AC/DC" class="hobby-image">
+                    </a>
+                </li>
+                <li class="music-item">
+                    <a href="BlackSabbath.html">
+                        <img src="LogoB.png" alt="Black Sabbath" class="hobby-image">
+                    </a>
+                </li>
+                <li class="music-item">
+                    <a href="Megadeath.html">
+                        <img src="LogoMEGA.png" alt="Black Sabbath" class="hobby-image">
+                    </a>
+                </li>
+                <li class="music-item">
+                    <a href="LedZeppelin.html">
+                        <img src="LogoL.png" alt="Black Sabbath" class="hobby-image">
+                    </a>
+                </li>
+            </ul>
         </div>
+        
 
         <div id="favorites" class="section">
             <h2>Favorites</h2>
-            <li class="hobby-item">
-                <img src="Icon8.png" alt="Metal" class="hobby-image">
-            <p><b>Movies</b> - Borat 1-2, The Hangover 1-3, The Dictator, Agent XXXL, IT 1-3, Winnie the Pooh: Blood and Honey</p>
-            <li class="hobby-item">
-                <img src="Icon9.png" alt="Metal" class="hobby-image">
-            <p><b>Books</b> - Bible, Pod Igoto (Под Игото), Bay Ganyo (Бай Ганьо)</p>
+            <ul>
+                <li class="hobby-item">
+                    <img src="Icon8.png" alt="Metal" class="hobby-image">
+                    <p><b>Movies</b> - Borat 1-2, The Hangover 1-3, The Dictator, Agent XXXL, IT 1-3, Winnie the Pooh: Blood and Honey</p>
+                </li>
+                <li class="hobby-item">
+                    <img src="Icon9.png" alt="Books" class="hobby-image">
+                    <p><b>Books</b> - Bible, Pod Igoto (Под Игото), Bay Ganyo (Бай Ганьо)</p>
+                </li>
+            </ul>
         </div>
     </div>
 

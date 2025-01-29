@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metallica - Discography</title>
+    <link rel="icon" type="image/png" href="IconM.png">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1b1b1b, #121212); /* Dark background with a subtle gradient */
+            color: #f2f2f2; /* Light gray text for readability */
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Remove the heading styles since we will use an image */
+        h1, h2 {
+            display: none;
+        }
+
+        .logo {
+            width: 250px; /* Adjust size of the logo */
+            margin-bottom: 20px; /* Space between the logo and content */
+        }
+
+        p {
+            color: #ccc; /* Slightly lighter gray text for paragraph */
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #222222; /* Dark background for album info */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #444444; /* Darker gray for song items */
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .song-item:hover {
+            background-color: #5a5a5a; /* Lighter gray on hover */
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #8b0000; /* Dark red for banner links */
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #c1c1c1; /* Light gray on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #6d0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- Replace the <h1> tag with the logo image -->
+        <img src="Logom.png" alt="Metallica Logo" class="logo">
+        
+        <div class="banner">
+            <a href="#songs">Songs</a>
+            <a href="#album">Album</a>
+        </div>
+
+        <!-- Album: Master of Puppets -->
+        <div id="album" class="section">
+            <h2>Album: *Master of Puppets*</h2>
+            <div class="album">
+                <img src="AlbumM1.png" alt="Master of Puppets Album Cover">
+                <div>
+                    <p><b>Released:</b> 1986</p>
+                    <p><b>Genre:</b> Thrash Metal</p>
+                    <p><b>Label:</b> Elektra</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Master of Puppets*</h2>
+            <p>Here are the songs from the album *Master of Puppets*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Master of Puppets</strong> – *Master of Puppets*
+                </li>
+                <li class="song-item">
+                    <strong>Battery</strong> – *Master of Puppets*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Ride the Lightning -->
+        <div id="album" class="section">
+            <h2>Album: *Ride the Lightning*</h2>
+            <div class="album">
+                <img src="AlbumM2.png" alt="Ride the Lightning Album Cover">
+                <div>
+                    <p><b>Released:</b> 1984</p>
+                    <p><b>Genre:</b> Thrash Metal</p>
+                    <p><b>Label:</b> Elektra</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Ride the Lightning*</h2>
+            <p>Here are the songs from the album *Ride the Lightning*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Creeping Death</strong> – *Ride the Lightning*
+                </li>
+                <li class="song-item">
+                    <strong>From Whom the Bell Tolls</strong> – *Ride the Lightning*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: ...And Justice for All -->
+        <div id="album" class="section">
+            <h2>Album: *...And Justice for All*</h2>
+            <div class="album">
+                <img src="AlbumM3.png" alt="And Justice for All Album Cover">
+                <div>
+                    <p><b>Released:</b> 1988</p>
+                    <p><b>Genre:</b> Thrash Metal</p>
+                    <p><b>Label:</b> Elektra</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *...And Justice for All*</h2>
+            <p>Here are the songs from the album *...And Justice for All*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>One</strong> – *...And Justice for All*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Kill 'Em All -->
+        <div id="album" class="section">
+            <h2>Album: *Kill 'Em All*</h2>
+            <div class="album">
+                <img src="AlbumM4.png" alt="Kill 'Em All Album Cover">
+                <div>
+                    <p><b>Released:</b> 1983</p>
+                    <p><b>Genre:</b> Thrash Metal</p>
+                    <p><b>Label:</b> Megaforce</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Kill 'Em All*</h2>
+            <p>Here are the songs from the album *Kill 'Em All*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Seek & Destroy</strong> – *Kill 'Em All*
+                </li>
+                <li class="song-item">
+                    <strong>Whiplash</strong> – *Kill 'Em All*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: The Black Album -->
+        <div id="album" class="section">
+            <h2>Album: *Metallica (The Black Album)*</h2>
+            <div class="album">
+                <img src="AlbumM5.png" alt="The Black Album">
+                <div>
+                    <p><b>Released:</b> 1991</p>
+                    <p><b>Genre:</b> Heavy Metal</p>
+                    <p><b>Label:</b> Elektra</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Metallica (The Black Album)*</h2>
+            <p>Here are the songs from the album *Metallica* (The Black Album):</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Enter Sandman</strong> – *Metallica (The Black Album)*
+                </li>
+                <li class="song-item">
+                    <strong>Sad But True</strong> – *Metallica (The Black Album)*
+                </li>
+                <li class="song-item">
+                    <strong>Wherever I May Roam</strong> – *Metallica (The Black Album)*
+                </li>
+                <li class="song-item">
+                    <strong>Nothing Else Matters</strong> – *Metallica (The Black Album)*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Garage Inc. -->
+        <div id="album" class="section">
+            <h2>Album: *Metallica (Garage Inc.)*</h2>
+            <div class="album">
+                <img src="AlbumM6.png" alt="Garage Inc.">
+                <div>
+                    <p><b>Released:</b> 1991</p>
+                    <p><b>Genre:</b> Heavy Metal</p>
+                    <p><b>Label:</b> Elektra</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Metallica (Garage Inc.)*</h2>
+            <p>Here are the songs from the album *Metallica* (Garage Inc.):</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Die, Die, Die My Darling</strong> – *Metallica (Garage Inc.)*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Back Button -->
+        <a href="menu.html">
+            <button class="back-button">Back to Menu</button>
+        </a>
+    </div>
+</body>
+</html>

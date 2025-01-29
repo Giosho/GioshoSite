@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Maiden - Discography</title>
+    <link rel="icon" type="image/png" href="IconI.png">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #3c3c3c); /* Dark gradient background */
+            color: #e6e6e6; /* Light gray text for readability */
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Remove the heading styles since we will use an image */
+        h1, h2 {
+            display: none;
+        }
+
+        .logo {
+            width: 350px; /* Adjust size of the logo */
+            margin-bottom: 20px; /* Space between the logo and content */
+        }
+
+        p {
+            color: #ccc; /* Slightly lighter gray text */
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #333333; /* Dark background for album info */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #4b4b4b; /* Dark gray for song items */
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .song-item:hover {
+            background-color: #6e6e6e; /* Light gray on hover */
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #cc3366; /* Metallic red for banner links */
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #ff3366; /* Lighter red on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #cc3366;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ff3366;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- Replace the <h1> tag with the logo image -->
+        <img src="LogoI.png" alt="Iron Maiden Logo" class="logo">
+        
+        <div class="banner">
+            <a href="#songs">Songs</a>
+            <a href="#album">Album</a>
+        </div>
+
+        <!-- Album: The Number of The Beast -->
+        <div id="album" class="section">
+            <h2>Album: *The Number of The Beast*</h2>
+            <div class="album">
+                <img src="AlbumI1.png" alt="The Number of The Beast Album Cover">
+                <div>
+                    <p><b>Released:</b> 1995</p>
+                    <p><b>Genre:</b> Heavy Metal</p>
+                    <p><b>Label:</b> EMI</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *The Number of The Beast*</h2>
+            <p>Here are the songs from the album *The Number of The Beast*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Run to the Hills</strong> – *The Number of The Beast*
+                </li>
+                <li class="song-item">
+                    <strong>The Number of The Beast</strong> – *The Number of The Beast*
+                </li>
+                <li class="song-item">
+                    <strong>Hallowed Be Thy Name</strong> – *The Number of The Beast*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Powerslave -->
+        <div id="album" class="section">
+            <h2>Album: *Powerslave*</h2>
+            <div class="album">
+                <img src="AlbumI2.png" alt="Powerslave Album Cover">
+                <div>
+                    <p><b>Released:</b> 1984</p>
+                    <p><b>Genre:</b> Heavy Metal</p>
+                    <p><b>Label:</b> EMI</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Powerslave*</h2>
+            <p>Here are the songs from the album *Powerslave*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>2 Minutes to Midnight</strong> – *Powerslave*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Somewhere in Time -->
+        <div id="album" class="section">
+            <h2>Album: *Somewhere in Time*</h2>
+            <div class="album">
+                <img src="AlbumI5.png" alt="Somewhere in Time Album Cover">
+                <div>
+                    <p><b>Released:</b> 1986</p>
+                    <p><b>Genre:</b> Heavy Metal</p>
+                    <p><b>Label:</b> EMI</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Somewhere in Time*</h2>
+            <p>Here are the songs from the album *Somewhere in Time*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Wasted Years</strong> – *Somewhere in Time*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Fear of the Dark -->
+        <div id="album" class="section">
+            <h2>Album: *Fear of the Dark*</h2>
+            <div class="album">
+                <img src="AlbumI4.png" alt="Fear of the Dark Album Cover">
+                <div>
+                    <p><b>Released:</b> 1984</p>
+                    <p><b>Genre:</b> Heavy Metal</p>
+                    <p><b>Label:</b> EMI</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Fear of the Dark*</h2>
+            <p>Here are the songs from the album *Fear of the Dark*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Fear of the Dark</strong> – *Fear of the Dark*
+                </li>
+                <li class="song-item">
+                    <strong>Be Quick or Be Dead</strong> – *Fear of the Dark*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Fear of the Dark -->
+        <div id="album" class="section">
+            <h2>Album: *Piece of Mind*</h2>
+            <div class="album">
+                <img src="AlbumI3.png" alt="Piece of Mind Album Cover">
+                <div>
+                    <p><b>Released:</b> 1984</p>
+                    <p><b>Genre:</b> Heavy Metal</p>
+                    <p><b>Label:</b> EMI</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs" class="section">
+            <h2>Tracklist: *Piece of Mind*</h2>
+            <p>Here are the songs from the album *Piece of Mind*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>The Trooper</strong> – *Piece of Mind*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Back Button -->
+        <a href="menu.html">
+            <button class="back-button">Back to Menu</button>
+        </a>
+    </div>
+</body>
+</html>
