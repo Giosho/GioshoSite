@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acid Bath - Discography</title>
+    <link rel="icon" type="image/png" href="LogoD.png">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c, #1d1d1d); /* Dark and grungy gradient */
+            color: #f2f2f2; /* Light gray text for readability */
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Remove the heading styles since we will use an image */
+        h1, h2 {
+            display: none;
+        }
+
+        .logo {
+            width: 250px; /* Adjust size of the logo */
+            margin-bottom: 20px; /* Space between the logo and content */
+        }
+
+        p {
+            color: #ccc; /* Slightly lighter gray text */
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #2e2e2e; /* Dark background for album info */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ee3424; /* Dark red for song items */
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .song-item:hover {
+            background-color: #ab392f; /* Light red on hover */
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ee3424;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #ab392f;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #ee3424;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #6d0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- Replace the <h1> tag with the logo image -->
+        <img src="LogoD.png" alt="Death Logo" class="logo">
+        
+        <div class="banner">
+            <a href="#songs-1">Songs</a>
+            <a href="#album-1">Album</a>
+        </div>
+
+        <!-- Album: Pagan Terrorism Tactics -->
+        <div id="album-1" class="section">
+            <h2>Album: *Pagan Terrorism Tactics*</h2>
+            <div class="album">
+                <img src="AlbumD1.png" alt="Pagan Terrorism Tactics Album Cover">
+                <div>
+                    <p><b>Released:</b> 1988</p>
+                    <p><b>Genre:</b> Death Metal</p>
+                    <p><b>Label:</b> Combat Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-1" class="section">
+            <h2>Tracklist: *Leprosy*</h2>
+            <p>Here are the songs from the album *Leprosy*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Leprosy</strong> – *Leprosy*
+                </li>
+                <li class="song-item">
+                    <strong>Born Dead</strong> – *Leprosy*
+                </li>
+                <li class="song-item">
+                    <strong>Left To Die</strong> – *Leprosy*
+                </li>
+                <li class="song-item">
+                    <strong>Pull The Plug</strong> – *Leprosy*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: When the Kite String Pops -->
+        <div id="album-2" class="section">
+            <h2>Album: *Scream Bloody Gore*</h2>
+            <div class="album">
+                <img src="AlbumD2.png" alt="Scream Bloody Gore Album Cover">
+                <div>
+                    <p><b>Released:</b> 1987</p>
+                    <p><b>Genre:</b> Death Metal</p>
+                    <p><b>Label:</b> Combat Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-2" class="section">
+            <h2>Tracklist: *Scream Bloody Gore*</h2>
+            <p>Here are the songs from the album *Scream Bloody Gore*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Infernal Death</strong> – *Scream Bloody Gore*
+                </li>
+                <li class="song-item">
+                    <strong>Zombie Retual</strong> – *Scream Bloody Gore*
+                </li>
+                <li class="song-item">
+                    <strong>Denial Of Life</strong> – *Scream Bloody Gore*
+                </li>
+                <li class="song-item">
+                    <strong>Evil Dead</strong> – *Scream Bloody Gore*
+                </li>
+            </ul>
+        </div>
+        
+        <div id="album-2" class="section">
+            <h2>Album: *Symbolic*</h2>
+            <div class="album">
+                <img src="AlbumD3.png" alt="Symbolic Album Cover">
+                <div>
+                    <p><b>Released:</b> 1995</p>
+                    <p><b>Genre:</b>Technical Death, Metalmelodic Death Metal</p>
+                    <p><b>Label:</b> Roadrunner Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-2" class="section">
+            <h2>Tracklist: *Symbolic*</h2>
+            <p>Here are the songs from the album *Symbolic*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Symbolic</strong> – *Symbolic*
+                </li>
+                <li class="song-item">
+                    <strong>Zero Torelance</strong> – *Symbolic*
+                </li>
+                <li class="song-item">
+                    <strong>Empty Words</strong> – *Symbolic*
+                </li>
+                <li class="song-item">
+                    <strong>Crystal Mountain</strong> – *Symbolic*
+                </li>
+            </ul>
+        </div>
+        
+        <div id="album-2" class="section">
+            <h2>Album: *Human*</h2>
+            <div class="album">
+                <img src="AlbumD4.png" alt="Human Album Cover">
+                <div>
+                    <p><b>Released:</b> 1991</p>
+                    <p><b>Genre:</b>Technical Death Metal, Progressive Metal</p>
+                    <p><b>Label:</b> Relativity Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-2" class="section">
+            <h2>Tracklist: *Human*</h2>
+            <p>Here are the songs from the album *Human*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Secret Face</strong> – *Human*
+                </li>
+            </ul>
+        </div>
+        
+        <div id="album-2" class="section">
+            <h2>Album: *Individual Thought Patterns*</h2>
+            <div class="album">
+                <img src="AlbumD5.png" alt="Individual Thought Patterns Patters Album Cover">
+                <div>
+                    <p><b>Released:</b> 1993</p>
+                    <p><b>Genre:</b> Technical Death Metal</p>
+                    <p><b>Label:</b> Relativity Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-2" class="section">
+            <h2>Tracklist: *Individual Thought Patterns*</h2>
+            <p>Here are the songs from the album *Individual Thought Patterns*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>the philosopher</strong> – *Individual Thought Patterns*
+                </li>
+            </ul>
+        </div>
+        <!-- Back Button -->
+        <a href="menu.html">
+            <button class="back-button">Back to Menu</button>
+        </a>
+    </div>
+</body>
+</html>

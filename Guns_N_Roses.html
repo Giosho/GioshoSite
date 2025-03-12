@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guns N' Roses - Discography</title>
+    <link rel="icon" type="image/png" href="LogoG.png">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #3e3e3e); /* Dark background with some depth */
+            color: #f5f5f5; /* Light gray for the text to stand out */
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Remove the heading styles since we will use an image */
+        h1, h2 {
+            display: none;
+        }
+
+        .logo {
+            width: 250px; /* Adjust size of the logo */
+            margin-bottom: 20px; /* Space between the logo and content */
+        }
+
+        p {
+            color: #ddd; /* Light gray text for better readability */
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #2b2b2b; /* Dark background for album info */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e74c3c; /* Red background for song items */
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .song-item:hover {
+            background-color: #c0392b; /* Darker red when hovered */
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #f1c40f; /* Gold for banner links */
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #f39c12; /* Lighter gold when hovered */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #f1c40f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #f39c12;
+        }
+
+        /* Media Queries for mobile responsiveness */
+        @media (max-width: 768px) {
+            .album img {
+                width: 120px; /* Adjust for smaller screens */
+            }
+
+            .banner a {
+                font-size: 1em; /* Adjust button font size */
+                padding: 10px 15px;
+            }
+
+            .menu {
+                padding: 10px; /* Reduce padding on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- Replace the <h1> tag with the logo image -->
+        <img src="LogoG.png" alt="Guns N' Roses Logo" class="logo">
+        
+        <div class="banner">
+            <a href="#appetite">Album: Appetite for Destruction</a>
+            <a href="#songs-appetite">Songs</a>
+            <a href="#illusion">Album: Use Your Illusion I</a>
+            <a href="#songs-illusion">Songs</a>
+        </div>
+
+        <!-- Album: Appetite for Destruction -->
+        <div id="appetite" class="section">
+            <h2>Album: *Appetite for Destruction*</h2>
+            <div class="album">
+                <img src="AlbumG1.png" alt="Appetite for Destruction Album Cover">
+                <div>
+                    <p><b>Released:</b> 1987</p>
+                    <p><b>Genre:</b> Hard Rock</p>
+                    <p><b>Label:</b> Geffen Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-appetite" class="section">
+            <h2>Tracklist: *Appetite for Destruction*</h2>
+            <p>Here are the songs from the album *Appetite for Destruction*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Welcome to the Jungle</strong> – *Appetite for Destruction*
+                </li>
+                <li class="song-item">
+                    <strong>It's So Easy</strong> – *Appetite for Destruction*
+                </li>
+                <li class="song-item">
+                    <strong>Nighttrain</strong> – *Appetite for Destruction*
+                </li>
+                <li class="song-item">
+                    <strong>Out Ta Get Me</strong> – *Appetite for Destruction*
+                </li>
+                <li class="song-item">
+                    <strong>Paradise City</strong> – *Appetite for Destruction*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Use Your Illusion I -->
+        <div id="illusion" class="section">
+            <h2>Album: *Use Your Illusion I*</h2>
+            <div class="album">
+                <img src="AlbumG2.png" alt="Use Your Illusion I Album Cover">
+                <div>
+                    <p><b>Released:</b> 1991</p>
+                    <p><b>Genre:</b> Hard Rock</p>
+                    <p><b>Label:</b> Geffen Records</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-illusion" class="section">
+            <h2>Tracklist: *Use Your Illusion I*</h2>
+            <p>Here are the songs from the album *Use Your Illusion I*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Right Next Door to Hell</strong> – *Use Your Illusion I*
+                </li>
+                <li class="song-item">
+                    <strong>Dust in the Wind</strong> – *Use Your Illusion I*
+                </li>
+                <li class="song-item">
+                    <strong>November Rain</strong> – *Use Your Illusion I*
+                </li>
+                <li class="song-item">
+                    <strong>Don't Cry</strong> – *Use Your Illusion I*
+                </li>
+                <li class="song-item">
+                    <strong>Knockin' on Heaven's Door</strong> – *Use Your Illusion I*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Back Button -->
+        <a href="menu.html">
+            <button class="back-button">Back to Menu</button>
+        </a>
+    </div>
+</body>
+</html>
