@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayhem - Discography</title>
+    <link rel="icon" type="image/png" href="LogoMay.png">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c, #1d1d1d); /* Dark and grungy gradient */
+            color: #f2f2f2; /* Light gray text for readability */
+        }
+
+        .menu {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Remove the heading styles since we will use an image */
+        h1, h2 {
+            display: none;
+        }
+
+        .logo {
+            width: 250px; /* Adjust size of the logo */
+            margin-bottom: 20px; /* Space between the logo and content */
+        }
+
+        p {
+            color: #ccc; /* Slightly lighter gray text */
+        }
+
+        .album {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #2e2e2e; /* Dark background for album info */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .album img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #180050; /* Dark red for song items */
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .song-item:hover {
+            background-color: #0d0034; /* Light red on hover */
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #17007c;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .banner a:hover {
+            background-color: #0b0048;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #170046;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #06001a;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- Replace the <h1> tag with the logo image -->
+        <img src="LogoMay.png" alt="Death Logo" class="logo">
+        
+        <div class="banner">
+            <a href="#songs-1">Songs</a>
+            <a href="#album-1">Album</a>
+        </div>
+
+        <!-- Album: Pagan Terrorism Tactics -->
+        <div id="album-1" class="section">
+            <h2>Album: *De Mysteriis Dom Sathanas*</h2>
+            <div class="album">
+                <img src="AlbumMay1.png" alt="Pagan Terrorism Tactics Album Cover">
+                <div>
+                    <p><b>Released:</b> 1994</p>
+                    <p><b>Genre:</b> Black Metal</p>
+                    <p><b>Label:</b> Deathlike Silence</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-1" class="section">
+            <h2>Tracklist: *De Mysteriis Dom Sathanas*</h2>
+            <p>Here are the songs from the album *De Mysteriis Dom Sathanas*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>De Mysteriis Dom Sathanas</strong> – *De Mysteriis Dom Sathanas*
+                </li>
+                <li class="song-item">
+                    <strong>Funeral Fog</strong> – *De Mysteriis Dom Sathanas*
+                </li>
+                <li class="song-item">
+                    <strong>Freezing Moon</strong> – *De Mysteriis Dom Sathanas*
+                </li>
+                <li class="song-item">
+                    <strong>Cursed in Eternity</strong> – *De Mysteriis Dom Sathanas*
+                </li>
+                <li class="song-item">
+                    <strong>Pagan Fears</strong> – *De Mysteriis Dom Sathanas*
+                </li>
+                <li class="song-item">
+                    <strong>Life Eternal</strong> – *De Mysteriis Dom Sathanas*
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: When the Kite String Pops -->
+        <div id="album-2" class="section">
+            <h2>Album: *Deathcrush*
+            <div class="album">
+                <img src="AlbumMay2.png" alt="Scream Bloody Gore Album Cover">
+                <div>
+                    <p><b>Released:</b> 1987</p>
+                    <p><b>Genre:</b> Black metal</p>
+                    <p><b>Label:</b> Posercorpse Music</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-2" class="section">
+            <h2>Tracklist: *Deathcrush*</h2>
+            <p>Here are the songs from the album *Deathcrush*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Deathcrush</strong> – *Deathcrush*
+                </li>
+                <li class="song-item">
+                    <strong>Chainsaw Gutfuck</strong> – *Deathcrush*
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div id="album-2" class="section">
+            <h2>Album: *Chimera*</h2>
+            <div class="album">
+                <img src="AlbumMay3.png" alt="Symbolic Album Cover">
+                <div>
+                    <p><b>Released:</b> 2004</p>
+                    <p><b>Genre:</b> Black metal</p>
+                    <p><b>Label:</b> Blasphemer</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="songs-2" class="section">
+            <h2>Tracklist: *Chimera*</h2>
+            <p>Here are the songs from the album *Chimera*:</p>
+            <ul class="song-list">
+                <li class="song-item">
+                    <strong>Whore</strong> – *Chimera*
+                </li>
+                <li class="song-item">
+                    <strong>My Death</strong> – *Chimera*
+                </li>
+            </ul>
+        </div>
+        <!-- Back Button -->
+        <a href="menu.html">
+            <button class="back-button">Back to Menu</button>
+        </a>
+    </div>
+</body>
+</html>
