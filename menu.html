@@ -47,6 +47,19 @@
             margin-right: 10px;
         }
 
+        #diploma {
+  text-align: center; /* Center contents horizontally */
+}
+
+#diploma img.diploma-image {
+  max-width: 80%;   /* Adjust size, 80% of container width */
+  height: auto;     /* Keep aspect ratio */
+  border-radius: 12px; /* Optional: rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Optional: subtle shadow */
+  margin-top: 10px;
+}
+
+
         @media (max-width: 600px) {
             .menu {
                 padding: 10px;
@@ -211,6 +224,7 @@
             <a href="#hobbies">Hobbies</a>
             <a href="#music">What Music I Listen To</a>
             <a href="#favorites">Favorites</a>
+            <a href="#diploma">Diploma</a>
         </div>
 
         <div id="intro" class="section">
@@ -316,7 +330,7 @@
             <h2>Favorites</h2>
             <ul>
                 <li class="hobby-item">
-                    <img src="Icon8.png" alt="Metal" class="hobby-image">
+                    <img src="Icon8.png" alt="Movies" class="hobby-image">
                     <p><b>Movies</b> - Borat 1-2, The Hangover 1-3, The Dictator, Agent XXXL, IT 1-3, Winnie the Pooh: Blood and Honey</p>
                 </li>
                 <li class="hobby-item">
@@ -325,10 +339,15 @@
                 </li>
             </ul>
         </div>
-    </div>
+
+        <!-- Correctly placed and labeled Diploma section -->
+       <div id="diploma" class="section">
+  <h2>Diploma</h2>
+  <img src="dip.png" alt="Diploma Image" class="diploma-image">
+</div>
 
     <script>
-        document.getElementById('profilePic').src = 'pfp2.jpg';
+        document.getElementById('profilePic').src = 'pfp1.jpg';
     </script>
 </body>
 </html>
